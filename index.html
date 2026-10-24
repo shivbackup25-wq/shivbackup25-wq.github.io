@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelFab: Chip Factory Tycoon</title>
+<meta name="description" content="Build a semiconductor fab in a 3D pixel-art cleanroom: sputtering, ALD, PLD, EUV lithography and real yield physics.">
+<link rel="icon" href="img/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0f172a; --panel:#1b2536; --text:#e8edf5; --muted:#93a3bb; --cyan:#22d3ee; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:'Pixelify Sans', system-ui, sans-serif; line-height:1.5; }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 16px; }
+  header img { width:100%; height:auto; display:block; image-rendering:pixelated; border-bottom:4px solid #070b14; }
+  h1 { font-size:clamp(28px,6vw,44px); margin:28px 0 4px; }
+  h1 span { color:var(--cyan); }
+  .tag { color:var(--muted); font-size:18px; margin:0 0 20px; }
+  .badge { display:inline-block; background:#16a34a; color:#fff; text-decoration:none; font-weight:700; font-size:18px;
+           padding:12px 22px; border:3px solid #070b14; border-radius:6px; box-shadow:inset 0 -5px 0 rgba(0,0,0,.28); }
+  .soon { color:var(--muted); font-size:14px; margin-left:10px; }
+  .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin:32px 0; }
+  .card { background:var(--panel); border:3px solid #070b14; border-radius:6px; padding:14px; }
+  .card b { color:var(--cyan); }
+  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-bottom:32px; }
+  .shots img { width:100%; border:3px solid #070b14; border-radius:6px; }
+  footer { border-top:2px solid #243149; padding:20px 0 40px; color:var(--muted); font-size:14px; }
+  footer a { color:var(--cyan); }
+</style>
+</head>
+<body>
+<header><img src="img/feature-graphic.png" alt="PixelFab: Chip Factory Tycoon"></header>
+<main class="wrap">
+  <h1>PIXEL<span>FAB</span></h1>
+  <p class="tag">Chip Factory Tycoon: build a semiconductor fab in a 3D pixel-art cleanroom.</p>
+  <!-- Replace href with your Play Store link once published -->
+  <a class="badge" href="#">Get it on Google Play</a><span class="soon">Coming soon to Android</span>
+
+  <section class="features">
+    <div class="card"><b>40 real fab tools</b><br>Sputtering, ALD, pulsed laser deposition, MBE, EUV lithography, plasma etch, CMP and more.</div>
+    <div class="card"><b>Real yield physics</b><br>ISO cleanroom classes, particle maps and Poisson defect yield. Keep your fab spotless.</div>
+    <div class="card"><b>21 chips to make</b><br>From solar cells and LEDs to DRAM, qubits and 3 nm AI accelerators.</div>
+    <div class="card"><b>Tuning mini-games</b><br>Pulse ALD cycles, fire the PLD laser, align masks and hit the etch endpoint.</div>
+  </section>
+
+  <section class="shots">
+    <img src="img/01-fab-overview.png" alt="Fab overview">
+    <img src="img/02-plasma-tools.png" alt="Pulsed laser deposition tool">
+    <img src="img/06-cleanroom.png" alt="Cleanroom particle map">
+    <img src="img/08-ald-minigame.png" alt="ALD mini-game">
+  </section>
+</main>
+<footer class="wrap">
+  <a href="privacy-policy.html">Privacy policy</a> · Contact: <a href="mailto:shiv.backup25@gmail.com">shiv.backup25@gmail.com</a><br>
+  © 2026 PixelFab
+</footer>
+</body>
+</html>
